@@ -95,9 +95,8 @@
 
 
 /* ---------------------------------------- */
-
-
-    /* Page - Home */
+/* Page - Home */
+/* ---------------------------------------- */
 
     /* Cell - Headline */
 .cell-index-1 {
@@ -152,9 +151,8 @@
 
 
 /* ---------------------------------------- */
-
-
 /* Page - About Me */
+/* ---------------------------------------- */
 
     /* Grid */
 .grid-container-aboutme {
@@ -168,7 +166,6 @@
     /* Whitespace omkring boksen */
     margin: 40px;
 }
-
     /* Main Button Properties */
 .cell-aboutme-1,
 .cell-aboutme-2,
@@ -197,15 +194,11 @@
     grid-column: 1/1;
     grid-row: 4;
 }
-.cell-aboutme-5 {
-    grid-column: 3/4;
-    grid-row: 4;
-}
+
 
 /* ---------------------------------------- */
-
-
-/* Page - School Projects */
+/* Page - School Projects - Semester Select */
+/* ---------------------------------------- */
 
     /* Cell - Base */
 .cell-school-1,
@@ -238,12 +231,11 @@
     grid-column: 1;
     grid-row: 6;
 }
-.cell-school-6 {
-    grid-column: 3;
-    grid-row: 6;
-}
 
-/* Page - 1. Semester */
+
+/* ---------------------------------------- */
+/* Page - 1. Semester - Project Select*/
+/* ---------------------------------------- */
 
     /* Main Button Properties */
 .cell-s1-1,
@@ -281,7 +273,10 @@
     grid-row: 6;
 }
 
-/* Page - Video */
+
+/* ---------------------------------------- */
+/* Page - Video - Project */
+/* ---------------------------------------- */
 
     /* Grid */
 .grid-container-s1video {
@@ -295,7 +290,6 @@
     /* Whitespace omkring boksen */
     margin: 40px;
 }
-
     /* Main Button Properties */
 .cell-s1video-1 {
     background: var(--secondary);
@@ -317,7 +311,10 @@
     grid-row: 2;
 }
 
-/* Page - Rumrejse */
+
+/* ---------------------------------------- */
+/* Page - Rumrejse - Project */
+/* ---------------------------------------- */
 
     /* Grid */
 .grid-container-s1space {
@@ -352,7 +349,10 @@
     grid-row: 2;
 }
 
-/* Page - Dance */
+
+/* ---------------------------------------- */
+/* Page - Dance - Project */
+/* ---------------------------------------- */
 
     /* Grid */
 .grid-container-s1dance {
@@ -392,7 +392,10 @@
     grid-row: 3;
 }
 
+
+/* ---------------------------------------- */
 /* Page - Bag Rattet */
+/* ---------------------------------------- */
 
     /* Grid */
 .grid-container-s1car {
@@ -432,9 +435,9 @@
     grid-row: 3;
 }
 
+
 /* ---------------------------------------- */
-
-
-/* Page - Own Projects */
+/* Page - Own Projects - Selector */
+/* ---------------------------------------- */
 
 /* Undersider */
