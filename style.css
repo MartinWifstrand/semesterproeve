@@ -428,42 +428,6 @@
 /* Page - Own Projects - Selector */
 /* ---------------------------------------- */
 
-/* Grid */
-.grid-container-own {
-    display: grid;
-    /* 3 Columns */
-    grid-template-columns: 1fr 1fr 1fr;
-    /* 3 Rows */
-    grid-template-rows: 1fr 1fr 1fr;
-    /* Mellemrum mellem Cells */
-    grid-gap: 25px 25px;
-    /* Whitespace omkring boksen */
-    margin: 40px;
-}
-/* Main Button Properties */
-.cell-own-1,
-.cell-own-2 {
-    background: var(--secondary);
-    height: 68px;
-    border-radius: 25px;
-    font-size: 30px;
-}
-/* Placering */
-.cell-own-1 {
-    grid-column: 1/4;
-    grid-row: 1;
-}
-.cell-own-2 {
-    grid-column: 1/4;
-    grid-row: 2;
-}
-.cell-own-3 {
-    grid-column: 1/2;
-    grid-row: 3;
-}
-.cell-own-4 {
-    grid-column: 3/4;
-    grid-row: 3;
-}
+
 
 /* Undersider */
