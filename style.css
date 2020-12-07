@@ -263,7 +263,7 @@
     margin: 40px;
 }
 
-/* Buttons med Placering + Main Button Properties */
+    /* Buttons med Placering + Main Button Properties */
 .cell-s1video-1 {
     background: var(--secondary);
     height: 68px;
@@ -281,6 +281,40 @@
     grid-row: 2;
 }
 
+    /* Rumrejse Page */
+.grid-container-s1space {
+    display: grid;
+    
+    /* 3 Columns */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* 6 Rows */
+    grid-template-rows: 1fr 1fr;
+
+    /* Mellemrum mellem Cells */
+    grid-gap: 25px 25px;
+    
+    /* Whitespace omkring boksen */
+    margin: 40px;
+}
+
+    /* Buttons med Placering + Main Button Properties */
+.cell-s1space-1 {
+    background: var(--secondary);
+    height: 68px;
+    border-radius: 25px;
+    font-size: 30px;
+    grid-column: 1/4;
+    grid-row: 1;
+}
+.cell-s1space-2 {
+    grid-column: 1/1;
+    grid-row: 2;
+}
+.cell-s1space-3 {
+    grid-column: 3/4;
+    grid-row: 2;
+}
 
 /* ---------------------------------------- */
 
