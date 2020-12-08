@@ -1,6 +1,5 @@
 /* Font Link */
-/* Tilføj '@import url' */
-/* ^ Tilføj Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 /* Root */
 :root{
@@ -21,21 +20,25 @@
 /* ---------------------------------------- */
 
 /* Line Heights - Centrering af Tekst */
-/* Line Height 1 */
+/* Line Height - Option 1 */
 .line-height1 {
     line-height: 2.4;
 }
-/* Line Height 2 */
+/* Line Height - Option 2 */
 .line-height2 {
     line-height: 1.9;
 }
-/* Line Height 3 */
+/* Line Height - Option 3 */
 .line-height3 {
     line-height: 2.2;
 }
-/* Line Height 4 */
+/* Line Height - Option 4 */
 .line-height4 {
     line-height: 1.34;
+}
+/* Line Height - Option 5 */
+.line-height5 {
+    line-height: 2.7;
 }
 /* Line Height for Back and Home Button */
 .back-btn,
@@ -47,11 +50,13 @@
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
+    font-family: 'Space Mono', monospace;
 }
 /* Top Text for Projects */
 .projecttext {
     margin: 40px;
     font-size: 25px;
+    font-family: 'Space Mono', monospace;
 }
 /* Image Width and Space */
 .img-width {
@@ -80,6 +85,7 @@
     text-align: center;
     padding: 0.5rem;
     text-decoration: none;
+    font-family: 'Space Mono', monospace;
 }
 /* Grid */
 .grid-container {
@@ -129,9 +135,9 @@
 /* Cell - Headline */
 .cell-index-1 {
     background: var(--primary);
-    grid-row: 1;
     grid-column: 1/4;
-    font-size: 28px;
+    grid-row: 1;
+    font-size: 25px;
     height: 68px;
     border-radius: 25px;
     display: table-cell;
@@ -140,8 +146,8 @@
 /* Cell - About Me */
 .cell-index-2 {
     background: var(--secondary);
-    grid-row: 2;
     grid-column: 2/4;
+    grid-row: 2;
     font-size: 28px;
     height: 68px;
     border-radius: 25px;
@@ -149,8 +155,8 @@
 /* Cell - School Projects */
 .cell-index-3 {
     background: var(--secondary);
-    grid-row: 4;
     grid-column: 1/3;
+    grid-row: 4;
     font-size: 28px;
     height: 68px;
     border-radius: 25px;
@@ -158,8 +164,8 @@
 /* Cell - Own Projects */
 .cell-index-4 {
     background: var(--secondary);
-    grid-row: 6;
     grid-column: 2/4;
+    grid-row: 6;
     font-size: 30px;
     height: 68px;
     border-radius: 25px;
@@ -201,7 +207,7 @@
 .cell-aboutme-3 {
     height: 68px;
     border-radius: 25px;
-    font-size: 50px;
+    font-size: 43px;
 }
 /* Placering + Color */
 .cell-aboutme-1 {
@@ -272,7 +278,7 @@
     background: var(--secondary);
     height: 68px;
     border-radius: 25px;
-    font-size: 30px;
+    font-size: 25px;
 }
 /* Placering */
 .cell-s1-1 {
@@ -479,4 +485,59 @@
 .img-center {
     display: inline-block;
     text-align: center;
+}
+
+/* ---------------------------------------- */
+/* Media Queries */
+/* ---------------------------------------- */
+
+
+/* Media 376px og større - Breddere end iPhone X */
+
+@media screen and (min-width: 376px) {
+
+    /* Grid Containers Centering og Properties */
+    .grid-container,
+    .grid-container-aboutme,
+    .grid-container-own,
+    .grid-container-s1car,
+    .grid-container-s1dance,
+    .grid-container-s1space,
+    .grid-container-s1video {
+        width: 254px;
+        margin-left: 42.7vw;
+        margin-right: 42.7vw;
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .grid-container,
+    .grid-container-aboutme {
+        height: 458px;
+    }
+
+    /* Header height */
+    .header {
+        padding-bottom: 2rem;
+    }
+
+    /* Footer height */
+    .footer {
+        padding-top: 1.5rem;
+    }
+}
+
+/* Media for 1920px og større (Desktop) */
+
+@media screen and (min-width: 1920px) {
+
+    /* Whitespace mellem top/header og "Skærmen" */
+    .header {
+        padding-bottom: 10rem;
+    }
+
+    /* Billedstørrelse (istedet for Bredde, ændres de her til Højde) */
+    .img-width {
+        height: 40vw;
+        width: auto;
+    }
 }
