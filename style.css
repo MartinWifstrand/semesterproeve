@@ -3,18 +3,18 @@
 
 /* Root */
 :root{
-    --primary:#0032A8;
-    --secondary: #0091FF;
-    --tertiary: #0CC3E8;
-    --quartiary:#e7fff9;
+    --primary:#e06363;
+    --secondary: #1f82bf;
+    --tertiary: #f2dd72;
+    --quartiary:#f1fff3;
+
+/* #1f82bf #f2dd72 #f56c67 #65c9c1 #f27e7e */
 
 /* Til SoMe */
     --youtube: #ff0000;
     --twitter: #00acee;
     --soundcloud: #ff7700;
 }
-/* ^ Tilføj Farver */
-/* ^ Ændrer Farver if Necessary */
 
 /* ---------------------------------------- */
 /* All-around Kode */
@@ -124,7 +124,7 @@ html {
 /* Button - Base */
 .home-btn,
 .back-btn {
-    background: var(--secondary);
+    background: var(--tertiary);
     height: 68px;
     border-radius: 25px;
     font-size: 15px;
@@ -172,7 +172,7 @@ html {
     background: var(--secondary);
     grid-column: 2/4;
     grid-row: 6;
-    font-size: 30px;
+    font-size: 28px;
     height: 68px;
     border-radius: 25px;
 }
