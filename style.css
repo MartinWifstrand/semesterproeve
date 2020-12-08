@@ -62,7 +62,6 @@
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr;
     padding-bottom: 3.5rem;
 }
 .cell-header {
@@ -98,7 +97,6 @@
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr;
     bottom: 0;
     padding-top: 2.5rem;
 }
@@ -469,8 +467,6 @@
     display: grid;
     /* 3 Columns */
     grid-template-columns: 1fr 1fr 1fr;
-    /* 1 Rows */
-    grid-template-rows: 1fr;
     /* Mellemrum mellem Cells */
     grid-gap: 25px 25px;
     /* Whitespace omkring boksen */
