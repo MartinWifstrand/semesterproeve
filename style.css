@@ -3,9 +3,10 @@
 
 /* Root */
 :root{
-    --primary:#ff6666;
-    --secondary: #ffa0a0;
-    --tertiary: #ffd4d4;
+    --primary:#0032A8;
+    --secondary: #0091FF;
+    --tertiary: #0CC3E8;
+    --quartiary:#e7fff9;
 
 /* Til SoMe */
     --youtube: #ff0000;
@@ -18,6 +19,11 @@
 /* ---------------------------------------- */
 /* All-around Kode */
 /* ---------------------------------------- */
+
+/* Background! */
+html {
+    background-color: var(--quartiary);
+}
 
 /* Line Heights - Centrering af Tekst */
 /* Line Height - Option 1 */
