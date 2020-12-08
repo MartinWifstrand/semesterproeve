@@ -3,21 +3,27 @@
 
 /* Root */
 :root{
-    --primary:#ff6666;
-    --secondary: #ffa0a0;
-    --tertiary: #ffd4d4;
+    --primary:#e06363;
+    --secondary: #1f82bf;
+    --tertiary: #f2dd72;
+    --quartiary:#f1fff3;
+
+/* #1f82bf #f2dd72 #f56c67 #65c9c1 #f27e7e */
 
 /* Til SoMe */
     --youtube: #ff0000;
     --twitter: #00acee;
     --soundcloud: #ff7700;
 }
-/* ^ Tilføj Farver */
-/* ^ Ændrer Farver if Necessary */
 
 /* ---------------------------------------- */
 /* All-around Kode */
 /* ---------------------------------------- */
+
+/* Background! */
+html {
+    background-color: var(--quartiary);
+}
 
 /* Line Heights - Centrering af Tekst */
 /* Line Height - Option 1 */
@@ -118,14 +124,10 @@
 /* Button - Base */
 .home-btn,
 .back-btn {
-    background: var(--secondary);
+    background: var(--tertiary);
     height: 68px;
     border-radius: 25px;
     font-size: 15px;
-
-    /* Tilføj 'grid-column' og 'grid-row'
-        på de specifikke knapper per side
-        for placering */
 }
 
 /* ---------------------------------------- */
@@ -166,7 +168,7 @@
     background: var(--secondary);
     grid-column: 2/4;
     grid-row: 6;
-    font-size: 30px;
+    font-size: 28px;
     height: 68px;
     border-radius: 25px;
 }
