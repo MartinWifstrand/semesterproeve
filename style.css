@@ -128,10 +128,6 @@ html {
     height: 68px;
     border-radius: 25px;
     font-size: 15px;
-
-    /* Tilføj 'grid-column' og 'grid-row'
-        på de specifikke knapper per side
-        for placering */
 }
 
 /* ---------------------------------------- */
