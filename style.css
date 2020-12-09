@@ -63,6 +63,7 @@ html {
     margin: 40px;
     font-size: 25px;
     font-family: 'Space Mono', monospace;
+    text-align: left;
 }
 /* Image Width and Space */
 .img-width {
