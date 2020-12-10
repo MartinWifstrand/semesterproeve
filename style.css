@@ -3,24 +3,42 @@
 
 /* Root */
 :root{
-    --primary:#e06363;
+    /* Primary colors */
+    --primary: #e06363;
     --secondary: #ffae00;
     --tertiary: #f7e27e;
-    --quartiary:#ffffff;
+    --quartiary: #ffffff;
+
+    /* Hover colors */
+    --hover: #e06363;
 
 /* #1f82bf #f2dd72 #f56c67 #65c9c1 #f27e7e */
 
 /* Til SoMe */
     /* LinkedIn's Hex-Code */
     --linkedin: #0e76a8;
+    /* LinkedIn Hover */
+    --linkedinhover: #0a5274;
+
     /* Youtube's Hex-Code */
     --youtube: #ff0000;
+    /* Youtube Hover */
+    --youtubehover: #b30000;
+
     /* Twitter's Hex-Code */
     --twitter: #00acee;
+    /* Twitter Hover */
+    --twitterhover: #0080b3;
+
     /* Soundcloud's Hex-Code */
     --soundcloud: #ff7700;
+    /* Soundcloud Hover */
+    --soundcloudhover: #b45400;
+
     /* Facebook's Hex-Code */
     --facebook: #3b5998;
+    /* Facebook Hover */
+    --facebookhover: #2f4575;
 }
 
 /* ---------------------------------------- */
@@ -137,6 +155,11 @@ html {
     border-radius: 25px;
     font-size: 15px;
 }
+/* Button - Base Hover */
+.home-btn:hover,
+.back-btn:hover {
+    background: var(--hover);
+}
 
 /* ---------------------------------------- */
 /* Page - Home */
@@ -179,6 +202,12 @@ html {
     font-size: 28px;
     height: 68px;
     border-radius: 25px;
+}
+/* Hover for Home */
+.cell-index-2:hover,
+.cell-index-3:hover,
+.cell-index-4:hover {
+    background: var(--hover);
 }
 /* Cell - Blanks */
 .cell-index-5,
@@ -228,11 +257,19 @@ html {
     grid-row: 1;
     background: var(--linkedin);
 }
+/* LinkedIn Hover color */
+.cell-aboutme-1:hover {
+    background: var(--linkedinhover);
+}
 /* Youtube SoMe */
 .cell-aboutme-2 {
     grid-column: 1/4;
     grid-row: 2;
     background: var(--youtube);
+}
+/* Youtube Hover color */
+.cell-aboutme-2:hover {
+    background: var(--youtubehover);
 }
 /* Twitter SoMe */
 .cell-aboutme-3 {
@@ -240,17 +277,29 @@ html {
     grid-row: 3;
     background: var(--twitter);
 }
+/* Twitter Hover color */
+.cell-aboutme-3:hover {
+    background: var(--twitterhover);
+}
 /* Soundcloud SoMe */
 .cell-aboutme-4 {
     grid-column: 1/4;
     grid-row: 4;
     background: var(--soundcloud);
 }
+/* Soundcloud Hover color */
+.cell-aboutme-4:hover {
+    background: var(--soundcloudhover);
+}
 /* Facebook SoMe */
 .cell-aboutme-5 {
     grid-column: 1/4;
     grid-row: 5;
     background: var(--facebook);
+}
+/* Facebook Hover color */
+.cell-aboutme-5:hover {
+    background: var(--facebookhover);
 }
 .cell-aboutme-6 {
     grid-column: 1/1;
@@ -561,7 +610,14 @@ html {
     .header {
         padding-bottom: 10rem;
     }
-
+    /* Oprykning af bunden så knapper er Visable */
+    .footer {
+        padding-top: 7rem;
+    }
+    .grid-container,
+    .grid-container-aboutme {
+        height: 533px;
+    }
     /* Billedstørrelse (istedet for Bredde, ændres de her til Højde) */
     .img-width {
         height: 40vw;
