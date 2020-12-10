@@ -320,6 +320,13 @@ html {
     border-radius: 25px;
     font-size: 35px;
 }
+/* Cell - Base Hover */
+.cell-school-1:hover,
+.cell-school-2:hover,
+.cell-school-3:hover,
+.cell-school-4:hover {
+    background: var(--hover);
+}
 /* Placering */
 .cell-school-1 {
     grid-column: 1/4;
@@ -355,6 +362,13 @@ html {
     height: 68px;
     border-radius: 25px;
     font-size: 25px;
+}
+/* Main Button Hover */
+.cell-s1-1:hover,
+.cell-s1-2:hover,
+.cell-s1-3:hover,
+.cell-s1-4:hover {
+    background: var(--hover);
 }
 /* Placering */
 .cell-s1-1 {
@@ -405,6 +419,10 @@ html {
     border-radius: 25px;
     font-size: 30px;
 }
+/* Main Button Hover */
+.cell-s1space-1:hover {
+    background: var(--hover);
+}
 /* Placering */
 .cell-s1space-1 {
     grid-column: 1/4;
@@ -442,6 +460,11 @@ html {
     height: 68px;
     border-radius: 25px;
     font-size: 30px;
+}
+/* Main Button Hover */
+.cell-s1dance-1:hover,
+.cell-s1dance-2:hover {
+    background: var(--hover);
 }
 /* Placering */
 .cell-s1dance-1 {
@@ -484,6 +507,10 @@ html {
     border-radius: 25px;
     font-size: 30px;
 }
+/* Main Button Hover */
+.cell-s1video-1:hover {
+    background: var(--hover);
+}
 /* Placering */
 .cell-s1video-1 {
     grid-column: 1/4;
@@ -521,6 +548,11 @@ html {
     height: 68px;
     border-radius: 25px;
     font-size: 30px;
+}
+/* Main Button Hover */
+.cell-s1car-1:hover,
+.cell-s1car-2:hover {
+    background: var(--hover);
 }
 /* Placering */
 .cell-s1car-1 {
@@ -570,7 +602,7 @@ html {
 
 /* Media 376px og større - Breddere end iPhone X */
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 1080px) {
 
     /* Grid Containers Centering og Properties */
     .grid-container,
@@ -581,8 +613,7 @@ html {
     .grid-container-s1space,
     .grid-container-s1video {
         width: 254px;
-        margin-left: 42.7vw;
-        margin-right: 42.7vw;
+        margin-left: 37vw;
         min-width: 300px;
         max-width: 300px;
     }
@@ -595,32 +626,46 @@ html {
     .header {
         padding-bottom: 2rem;
     }
-
+    .header-index {
+        padding-bottom: 0.5rem;
+    }
     /* Footer height */
     .footer {
-        padding-top: 1.5rem;
+        padding-top: 2rem;
+    }
+    .footer-aboutme {
+        padding-top: 10rem;
     }
 }
 
 /* Media for 1920px og større (Desktop) */
 
 @media screen and (min-width: 1920px) {
-
-    /* Whitespace mellem top/header og "Skærmen" */
-    .header {
-        padding-bottom: 10rem;
-    }
-    /* Oprykning af bunden så knapper er Visable */
-    .footer {
-        padding-top: 7rem;
-    }
+    /* Grid Containers Centering og Properties */
     .grid-container,
+    .grid-container-aboutme,
+    .grid-container-own,
+    .grid-container-s1car,
+    .grid-container-s1dance,
+    .grid-container-s1space,
+    .grid-container-s1video {
+        width: 254px;
+        margin-left: 42.7vw;
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .grid-container {
+        padding-top: 10rem;
+    }
     .grid-container-aboutme {
-        height: 533px;
+        padding-bottom: 2rem;
     }
     /* Billedstørrelse (istedet for Bredde, ændres de her til Højde) */
     .img-width {
         height: 40vw;
         width: auto;
+    }
+    footer {
+        padding-top: 2rem;
     }
 }
