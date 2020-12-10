@@ -11,9 +11,16 @@
 /* #1f82bf #f2dd72 #f56c67 #65c9c1 #f27e7e */
 
 /* Til SoMe */
+    /* LinkedIn's Hex-Code */
+    --linkedin: #0e76a8;
+    /* Youtube's Hex-Code */
     --youtube: #ff0000;
+    /* Twitter's Hex-Code */
     --twitter: #00acee;
+    /* Soundcloud's Hex-Code */
     --soundcloud: #ff7700;
+    /* Facebook's Hex-Code */
+    --facebook: #3b5998;
 }
 
 /* ---------------------------------------- */
@@ -197,8 +204,8 @@ html {
     display: grid;
     /* 3 Columns */
     grid-template-columns: 1fr 1fr 1fr;
-    /* 4 Rows */
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* 6 Rows */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     /* Mellemrum mellem Cells */
     grid-gap: 25px 25px;
     /* Whitespace omkring boksen */
@@ -207,30 +214,47 @@ html {
 /* Main Button Properties */
 .cell-aboutme-1,
 .cell-aboutme-2,
-.cell-aboutme-3 {
+.cell-aboutme-3,
+.cell-aboutme-4,
+.cell-aboutme-5 {
     height: 68px;
     border-radius: 25px;
     font-size: 43px;
 }
 /* Placering + Color */
+/* LinkedIn SoMe */
 .cell-aboutme-1 {
     grid-column: 1/4;
     grid-row: 1;
-    background: var(--youtube);
+    background: var(--linkedin);
 }
+/* Youtube SoMe */
 .cell-aboutme-2 {
     grid-column: 1/4;
     grid-row: 2;
-    background: var(--twitter);
+    background: var(--youtube);
 }
+/* Twitter SoMe */
 .cell-aboutme-3 {
     grid-column: 1/4;
     grid-row: 3;
+    background: var(--twitter);
+}
+/* Soundcloud SoMe */
+.cell-aboutme-4 {
+    grid-column: 1/4;
+    grid-row: 4;
     background: var(--soundcloud);
 }
-.cell-aboutme-4 {
+/* Facebook SoMe */
+.cell-aboutme-5 {
+    grid-column: 1/4;
+    grid-row: 5;
+    background: var(--facebook);
+}
+.cell-aboutme-6 {
     grid-column: 1/1;
-    grid-row: 4;
+    grid-row: 6;
 }
 
 /* ---------------------------------------- */
