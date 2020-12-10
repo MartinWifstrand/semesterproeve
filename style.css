@@ -616,10 +616,12 @@ html {
     /* Whitespace omkring boksen */
     margin: 40px;
 }
+/* Cell Placement */
 .cell-own-1 {
     grid-column: 1/2;
     grid-row: 1;
 }
+/* Image centrering */
 .img-center {
     display: inline-block;
     text-align: center;
@@ -652,14 +654,14 @@ html {
         height: 458px;
     }
 
-    /* Header height */
+    /* Header heights */
     .header {
         padding-bottom: 2rem;
     }
     .header-index {
         padding-bottom: 0.5rem;
     }
-    /* Footer height */
+    /* Footer heights */
     .footer {
         padding-top: 2rem;
     }
@@ -684,9 +686,11 @@ html {
         min-width: 300px;
         max-width: 300px;
     }
+    /* Base mellemrum fra bunden */
     .grid-container {
         padding-top: 10rem;
     }
+    /* Mellemrum fra bunden på About Me siden */
     .grid-container-aboutme {
         padding-bottom: 2rem;
     }
@@ -695,6 +699,7 @@ html {
         height: 40vw;
         width: auto;
     }
+    /* Endnu en Mellemrum mellem bund og Grids */
     footer {
         padding-top: 2rem;
     }
