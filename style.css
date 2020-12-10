@@ -405,22 +405,24 @@ html {
     display: grid;
     /* 3 Columns */
     grid-template-columns: 1fr 1fr 1fr;
-    /* 2 Rows */
-    grid-template-rows: 1fr 1fr;
+    /* 3 Rows */
+    grid-template-rows: 1fr 1fr 1fr;
     /* Mellemrum mellem Cells */
     grid-gap: 25px 25px;
     /* Whitespace omkring boksen */
     margin: 40px;
 }
 /* Main Button Properties */
-.cell-s1space-1 {
+.cell-s1space-1,
+.cell-s1space-2 {
     background: var(--secondary);
     height: 68px;
     border-radius: 25px;
     font-size: 30px;
 }
 /* Main Button Hover */
-.cell-s1space-1:hover {
+.cell-s1space-1:hover,
+.cell-s1space-2:hover {
     background: var(--hover);
 }
 /* Placering */
@@ -429,12 +431,16 @@ html {
     grid-row: 1;
 }
 .cell-s1space-2 {
-    grid-column: 1/1;
+    grid-column: 1/4;
     grid-row: 2;
 }
 .cell-s1space-3 {
+    grid-column: 1/1;
+    grid-row: 3;
+}
+.cell-s1space-4 {
     grid-column: 3/4;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 /* ---------------------------------------- */
@@ -446,8 +452,8 @@ html {
     display: grid;
     /* 3 Columns */
     grid-template-columns: 1fr 1fr 1fr;
-    /* 3 Rows */
-    grid-template-rows: 1fr 1fr 1fr;
+    /* 5 Rows */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     /* Mellemrum mellem Cells */
     grid-gap: 25px 25px;
     /* Whitespace omkring boksen */
@@ -455,7 +461,9 @@ html {
 }
 /* Main Button Properties */
 .cell-s1dance-1,
-.cell-s1dance-2 {
+.cell-s1dance-2,
+.cell-s1dance-3,
+.cell-s1dance-4 {
     background: var(--secondary);
     height: 68px;
     border-radius: 25px;
@@ -463,7 +471,9 @@ html {
 }
 /* Main Button Hover */
 .cell-s1dance-1:hover,
-.cell-s1dance-2:hover {
+.cell-s1dance-2:hover,
+.cell-s1dance-3:hover,
+.cell-s1dance-4:hover {
     background: var(--hover);
 }
 /* Placering */
@@ -476,12 +486,20 @@ html {
     grid-row: 2;
 }
 .cell-s1dance-3 {
-    grid-column: 1/2;
+    grid-column: 1/4;
     grid-row: 3;
 }
 .cell-s1dance-4 {
+    grid-column: 1/4;
+    grid-row: 4;
+}
+.cell-s1dance-5 {
+    grid-column: 1/2;
+    grid-row: 5;
+}
+.cell-s1dance-6 {
     grid-column: 3/4;
-    grid-row: 3;
+    grid-row: 5;
 }
 
 /* ---------------------------------------- */
@@ -534,8 +552,8 @@ html {
     display: grid;
     /* 3 Columns */
     grid-template-columns: 1fr 1fr 1fr;
-    /* 3 Rows */
-    grid-template-rows: 1fr 1fr 1fr;
+    /* 5 Rows */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     /* Mellemrum mellem Cells */
     grid-gap: 25px 25px;
     /* Whitespace omkring boksen */
@@ -543,7 +561,9 @@ html {
 }
 /* Main Button Properties */
 .cell-s1car-1,
-.cell-s1car-2 {
+.cell-s1car-2,
+.cell-s1car-3,
+.cell-s1car-4 {
     background: var(--secondary);
     height: 68px;
     border-radius: 25px;
@@ -551,7 +571,9 @@ html {
 }
 /* Main Button Hover */
 .cell-s1car-1:hover,
-.cell-s1car-2:hover {
+.cell-s1car-2:hover,
+.cell-s1car-3:hover,
+.cell-s1car-4:hover {
     background: var(--hover);
 }
 /* Placering */
@@ -564,12 +586,20 @@ html {
     grid-row: 2;
 }
 .cell-s1car-3 {
-    grid-column: 1/2;
+    grid-column: 1/4;
     grid-row: 3;
 }
 .cell-s1car-4 {
+    grid-column: 1/4;
+    grid-row: 4;
+}
+.cell-s1car-5 {
+    grid-column: 1/2;
+    grid-row: 5;
+}
+.cell-s1car-6 {
     grid-column: 3/4;
-    grid-row: 3;
+    grid-row: 5;
 }
 
 /* ---------------------------------------- */
@@ -586,10 +616,12 @@ html {
     /* Whitespace omkring boksen */
     margin: 40px;
 }
+/* Cell Placement */
 .cell-own-1 {
     grid-column: 1/2;
     grid-row: 1;
 }
+/* Image centrering */
 .img-center {
     display: inline-block;
     text-align: center;
@@ -622,14 +654,14 @@ html {
         height: 458px;
     }
 
-    /* Header height */
+    /* Header heights */
     .header {
         padding-bottom: 2rem;
     }
     .header-index {
         padding-bottom: 0.5rem;
     }
-    /* Footer height */
+    /* Footer heights */
     .footer {
         padding-top: 2rem;
     }
@@ -654,9 +686,11 @@ html {
         min-width: 300px;
         max-width: 300px;
     }
+    /* Base mellemrum fra bunden */
     .grid-container {
         padding-top: 10rem;
     }
+    /* Mellemrum fra bunden på About Me siden */
     .grid-container-aboutme {
         padding-bottom: 2rem;
     }
@@ -665,6 +699,7 @@ html {
         height: 40vw;
         width: auto;
     }
+    /* Endnu en Mellemrum mellem bund og Grids */
     footer {
         padding-top: 2rem;
     }
